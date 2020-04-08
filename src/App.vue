@@ -1,8 +1,11 @@
 <template>
   <div id="main-app" class="container">
     <h4>{{ title }}</h4>
-    <font-awesome-icon icon="plus" class="mr-2" />Add Appointment
-    <AppointmentList :appointments="appointments" />
+
+    <div class="row justify-content-center">
+      <font-awesome-icon icon="plus" class="mr-2" />Add Appointment
+      <Appointment-List :appointments="appointments" />
+    </div>
   </div>
 </template>
 
